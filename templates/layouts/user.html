@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" >
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1, target-densitydpi=device-dpi" >
+    <title>OculaScan</title>
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='user/images/favicon.jpg') }}" >
+    <link rel="stylesheet" href="{{ url_for('static', filename='user/css/font-awesome.css') }}" >
+    <link rel="stylesheet" href="{{ url_for('static', filename='user/css/bootstrap.min.css') }}" >
+    <link rel="stylesheet" href="{{ url_for('static', filename='user/css/slick.css') }}" >
+    <link rel="stylesheet" href="{{ url_for('static', filename='user/css/magnific-popup.css') }}" >
+    <link rel="stylesheet" href="{{ url_for('static', filename='user/css/nice-select.css') }}" >
+    <link rel="stylesheet" href="{{ url_for('static', filename='user/css/spacing.css') }}" >
+    <link rel="stylesheet" href="{{ url_for('static', filename='user/css/style.css') }}" >
+    <link rel="stylesheet" href="{{ url_for('static', filename='user/css/responsive.css') }}" >
+    <link rel="stylesheet" href="{{ url_for('static', filename='user/css/contis-icon.css') }}" >
+  </head>
+
+  <body>
+    <!--============================
+        MAIN MANU START
+    ==============================-->
+    <nav class="navbar navbar-expand-lg tf__main_menu">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/"
+          >OculaScan</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="far fa-stream menu_icon_bar"></i>
+          <i class="far fa-times close_icon_close"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav m-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#tentang-kami">Tentang Kami</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#faq">FAQ</a>
+            </li>
+          </ul>
+          <ul class="tf__menu_btn d-flex flex-wrap align-items-center">
+            {% if session['name']%}
+                <li><a href="/admin/image-clasification">Dashboard</a></li>
+            {%else %}
+              <li><a href="/login">Masuk</a></li>
+              <li><a href="/register" class="tf__menu_2nd_btn">Daftar</a></li>
+            {%endif%}
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--============================
+        MAIN MANU END
+    ==============================-->
+
+    {% block content %}{% endblock %}
+
+    <!--============================
+        FOOTER START
+    ==============================-->
+    <section class="tf__footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-12">
+            <div class=" d-flex flex-wrap justify-content-between my-3">
+              <p>© 2024 OculaScan. All rights reserved.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--============================
+        FOOTER END
+    ==============================-->
+
+    <!--jquery library js-->
+    <script src="{{ url_for('static', filename='user/js/plugin.js') }}"></script>
+    <!--main js-->
+    <script src="{{ url_for('static', filename='user/js/main.js') }}"></script>
+  </body>
+</html>

@@ -1,0 +1,61 @@
+{% extends "layouts/auth.html" %}
+
+{% block content %}
+<section class="tf__pricing pt_165">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-8 m-auto">
+          <div class="tf__common_heading">
+            <h6>Selamat Datang!</h6>
+            <h2 class="tf__common_heading_color mb-3">Buat Akun</h2>
+          </div>
+        </div>
+      </div>
+      <div class="row"></div>
+    </div>
+</section>
+<section class="auth_from pb_100">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-7 col-lg-6 col-xl-5">
+        <div class="auth_card">
+          {% if error %}
+          <p style="color: red;">{{ error }}</p>
+          {% endif %}
+          <form class="tf__blog_form" action="{{ url_for('register') }}" method="post">
+            <div class="row">
+              <div class="col-xl-12">
+                <div class="tf__blog_form_input tf__contact_form_input">
+                  <label for="name">Nama</label>
+                  <input type="text" id="name" name="name" placeholder="">
+                </div>
+              </div>
+              <div class="col-xl-12">
+                <div class="tf__blog_form_input tf__contact_form_input">
+                  <label for="email">Email</label>
+                  <input type="text" id="email" name="email" placeholder="">
+                </div>
+              </div>
+              <div class="col-xl-12">
+                <div class="tf__blog_form_input tf__contact_form_input">
+                  <label for="password">Password</label>
+                  <input type="password" id="password" name="password" placeholder="">
+                </div>
+              </div>
+              <div class="col-xl-12 mt-5">
+                <div class="tf__blog_form_input tf__contact_form_input">
+                  <button class="tf__common_btn w-100" type="submit">
+                    Daftar
+                    <i class="fa-regular fa-arrow-right-long" aria-hidden="true"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </form>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}

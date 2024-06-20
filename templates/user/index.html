@@ -1,0 +1,297 @@
+{% extends "layouts/user.html" %}
+
+{% block content %}
+    <!--============================
+        BANNER START
+    ==============================-->
+    <section class="tf__banner pt_160">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-7 m-auto">
+              <div class="tf__banner_text">
+                <h6>OculaScan.ai MEMBUAT PREDIKSI CEPAT & MUDAH</h6>
+                <h1>Prediksi Penyakit Mata</h1>
+                <p>
+                  Berikan pengalaman terstruktur untuk pasien dan membuat mereka kembali.
+                  <br>
+                  Bergabunglah sekarang untuk melacak dan menganalisis data kesehatan mata Anda.
+                </p>
+                <a href="/register" class="tf__common_btn"
+                  >Daftar Gratis <i class="fa-regular fa-arrow-right-long"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xl-10 m-auto">
+              <div class="tf__banner_img">
+                <img
+                  src="{{ url_for('static', filename='user/images/new-banner.png') }}"
+                  alt="banner img"
+                  class="img-fluid w-100" style="border-top: 16px solid black; border-right: 16px solid black; border-left: 16px solid black;">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--============================
+          BANNER END
+      ==============================-->
+  
+      <!--============================
+          CONTENT CREATOR START
+      ==============================-->
+      <section class="tf__content_creator pt_50 pb_50">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-8 col-md-8 m-auto">
+              <div class="tf__common_heading">
+                <h6><span>OculaScan.ai</span> MEMBANTU ANDA MEMPREDIKSI PENYAKIT MATA SECARA CEPAT</h6>
+                <h2 class="tf__common_heading_color">Macam Penyakit Mata</h2>
+              </div>
+            </div>
+          </div>
+        </div>  
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-3 col-md-6">
+              <div class="tf__single_service tf__single_benifit mb-4">
+                <div class="text-center">
+                  <img
+                    src="{{ url_for('static', filename='user/images/normal.png') }}"
+                    alt="creator"
+                    class="img-fluid w-75" >
+                  <a class="mt-2">Normal</a>
+                </div>
+                <p class="justify-text">
+                  Pada Kondisi ini Mata normal adalah kondisi dimana mata berfungsi dengan baik tanpa adanya kelainan atau penyakit. Penglihatan jelas, tajam, dan tidak ada gangguan seperti kabur atau distorsi.
+                </p>
+              </div>
+            </div>
+            <div class="col-xl-3 col-md-6">
+              <div class="tf__single_service tf__single_benifit mb-4">
+                <div class="text-center">
+                  <img
+                    src="{{ url_for('static', filename='user/images/diabetic.png') }}"
+                    alt="creator"
+                    class="img-fluid w-75" >
+                  <a class="mt-2">Diabetic Retinopathy</a>
+                </div>
+                <p class="justify-text">
+                  Diabetic Retinopathy adalah komplikasi diabetes yang mempengaruhi mata. Kondisi ini terjadi akibat kerusakan pembuluh darah kecil di retina, lapisan jaringan peka cahaya di belakang mata.
+                </p>
+              </div>
+            </div>
+            <div class="col-xl-3 col-md-6">
+              <div class="tf__single_service tf__single_benifit mb-4">
+                <div class="text-center">
+                  <img
+                    src="{{ url_for('static', filename='user/images/cataract.png') }}"
+                    alt="creator"
+                    class="img-fluid w-75" >
+                  <a class="mt-2">Cataract</a>
+                </div>
+                <p class="justify-text">
+                  Cataract adalah kondisi dimana lensa mata menjadi keruh, sehingga mengganggu penglihatan. Gejala katarak meliputi penglihatan yang buram, sensitif terhadap cahaya, dan kesulitan melihat di malam hari.
+                </p>
+              </div>
+            </div>
+            <div class="col-xl-3 col-md-6">
+              <div class="tf__single_service tf__single_benifit mb-4">
+                <div class="text-center">
+                  <img
+                    src="{{ url_for('static', filename='user/images/glucoma.png') }}"
+                    alt="creator"
+                    class="img-fluid w-75" >
+                  <a class="mt-2">Glaucoma</a>
+                </div>
+                <p class="justify-text">
+                  Glaukoma adalah kondisi medis yang merusak saraf optik mata Anda, biasanya akibat tekanan tinggi di dalam mata. Kondisi ini dapat menyebabkan kehilangan penglihatan dan bahkan kebutaan jika tidak diobati.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--============================
+          CONTENT CREATOR END
+      ==============================-->
+  
+      <!--============================
+          PRICING START
+      ==============================-->
+      <section class="tf__pricing pt_75 pb_50" id="tentang-kami">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-8 col-md-8 m-auto">
+              <div class="tf__common_heading">
+                <h6>Tentang Kami</h6>
+                <h2 class="tf__common_heading_color">Anggota Tim</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tf__main_features">
+          <div class="container">
+            <div class="row">
+              <div class="col-xl-3 col-md-6">
+                <div class="tf__single_service tf__single_benifit mb-4">
+                  <div class="text-center">
+                    <img src="{{ url_for('static', filename='user/images/profil.png') }}" alt="creator" class="img-fluid w-50">
+                    <a class="mt-2">Anastasya Salsabilla</a>
+                    <p class="jobdesk">Project Manager</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 col-md-6">
+                <div class="tf__single_service tf__single_benifit mb-4">
+                  <div class="text-center">
+                    <img src="{{ url_for('static', filename='user/images/profil.png') }}" alt="creator" class="img-fluid w-50">
+                    <a class="mt-2">Asyifah Zalsabilah M</a>
+                    <p class="jobdesk">Data/Project Researcher</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 col-md-6">
+                <div class="tf__single_service tf__single_benifit mb-4">
+                  <div class="text-center">
+                    <img src="{{ url_for('static', filename='user/images/profil.png') }}" alt="creator" class="img-fluid w-50">
+                    <a class="mt-2">Muhammad Fahriawan S</a>
+                    <p class="jobdesk">ML Ops</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 col-md-6">
+                <div class="tf__single_service tf__single_benifit mb-4">
+                  <div class="text-center">
+                    <img src="{{ url_for('static', filename='user/images/profil.png') }}" alt="creator" class="img-fluid w-50">
+                    <a class="mt-2">Aditiya Saputra</a>
+                    <p class="jobdesk">ML Engineer</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 col-md-6">
+                <div class="tf__single_service tf__single_benifit mb-4">
+                  <div class="text-center">
+                    <img src="{{ url_for('static', filename='user/images/profil.png') }}" alt="creator" class="img-fluid w-50">
+                    <a class="mt-2">Yoga Bagas Kurniawan</a>
+                    <p class="jobdesk">UI/WEB Development</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>      
+      <!--============================
+          PRICING END
+      ==============================-->
+  
+      <!--============================
+          FAQ START
+      ==============================-->
+      <section class="tf__faq pt_75 pb_50" id="faq">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-6 col-md-8 m-auto">
+              <div class="tf__common_heading tf__faq_common_heading">
+                <h6>faq</h6>
+                <h2 class="tf__common_heading_color">
+                  Pertanyaan yang sering diajukan
+                </h2>
+              </div>
+            </div>
+          </div>
+  
+          <div class="row">
+            <div class="col-xl-8 col-md-8 col-lg-8 mx-auto">
+              <div class="accordion tf__faq_accordion" id="accordionExample01">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button
+                      class="accordion-button"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseOne"
+                      aria-expanded="true"
+                      aria-controls="collapseOne"
+                    >
+                      Apa Itu Situs Prediksi Penyakit Mata AI?
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseOne"
+                    class="accordion-collapse collapse show"
+                    aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample01"
+                  >
+                    <div class="accordion-body">
+                      <p>
+                        Situs prediksi penyakit mata AI adalah platform yang menggunakan kecerdasan buatan untuk memprediksi berbagai penyakit mata. Platform ini dapat mendeteksi kondisi seperti Normal, Diabetic Retinopathy, Katarak, dan Glaukoma, seringkali dengan intervensi manusia yang minimal. Dengan teknologi AI, situs ini memberikan analisis yang cepat dan akurat, membantu dalam diagnosis dini dan pengobatan yang tepat.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseTwo"
+                      aria-expanded="false"
+                      aria-controls="collapseTwo"
+                    >
+                      Bagaimana Prediksi Penyakit Mata AI Bekerja?
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseTwo"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample01"
+                  >
+                    <div class="accordion-body">
+                      <p>
+                        Prediksi penyakit mata AI didukung oleh model pembelajaran mesin yang telah dilatih dengan sejumlah besar data medis. Model-model ini dapat menganalisis dan memprediksi kondisi mata berdasarkan input yang diterima, sehingga mampu menghasilkan diagnosis yang mirip dengan yang dilakukan oleh tenaga medis. Dengan teknologi ini, AI dapat mendeteksi kondisi seperti Normal, Diabetic Retinopathy, Katarak, dan Glaukoma secara cepat dan akurat.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseThree"
+                      aria-expanded="false"
+                      aria-controls="collapseThree"
+                    >
+                      Bagaimana Menggunakan Situs Prediksi Penyakit Mata AI?
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseThree"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingThree"
+                    data-bs-parent="#accordionExample01"
+                  >
+                    <div class="accordion-body">
+                      <p>
+                        Menggunakan situs prediksi penyakit mata AI cukup mudah. Anda memasukkan informasi atau gejala yang Anda miliki, dan AI akan menghasilkan prediksi berdasarkan input tersebut. Anda kemudian dapat mengedit dan menyempurnakan hasil prediksi sesuai kebutuhan. Dengan demikian, penggunaan situs ini dapat memberikan informasi awal yang berguna untuk pengguna sebelum mengunjungi profesional medis.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--============================
+          FAQ END
+      ==============================-->
+  
+{% endblock %}
+
